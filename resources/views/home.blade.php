@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('This is where images shoul be displayed') }}
                 </div>
             </div>
         </div>

@@ -34,7 +34,17 @@ class ImageUploadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'file' => 'required',
+        ]);
+        $title = time().'.'.request()->file->getClientOriginalExtension();
+        $request->file->move(public_path('images'), $title);
+
+        $storeImage = new Image;
+       $storeImage->title = $title;
+       $storeImage->save();
+  
+        return response()->json(['success'=>'File Uploaded Successfully']);
     }
 
     /**

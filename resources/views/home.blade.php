@@ -14,7 +14,22 @@
                         </div>
                     @endif
 
-                    {{ __('This is where images shoul be displayed') }}
+                    <h2> Share an Image With Your Friends!</h2>
+                    <form method="POST" action="{{ url('home') }}" enctype="multipart/form-data">
+                    @csrf
+                        <div class="form-group">
+                            <input name="image" type="file" class="form-control">
+
+                            <br/>
+                            <div class="progress">
+                                <div class="bar"></div>
+                                <div class="percentage">0%</div>
+                            </div>
+                            <br/>
+                            <input type="submit" value="Upload Photo" class="btn btn-primary">
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>

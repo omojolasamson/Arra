@@ -18,6 +18,26 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+
+    <style>
+        .bar-wrapper{
+            width: 100%;
+            position: relative;
+        }
+        .progress-bar {
+            width: 0%;
+            height: 30px;
+            background-color: green;
+        }
+        .percentage {
+            /*display: inline-block;*/
+            position: absolute;
+            left: 50%;
+        }
+</style>
+
 </head>
 <body>
     <div id="app">

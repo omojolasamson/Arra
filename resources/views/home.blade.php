@@ -21,8 +21,8 @@
                             <input name="image" type="file" class="form-control">
 
                             <br/>
-                            <div class="progress">
-                                <div class="bar"></div>
+                            <div class="bar-wrapper">
+                                <div class="progress-bar"></div>
                                 <div class="percentage">0%</div>
                             </div>
                             <br/>
